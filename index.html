@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Dejan Dojcinoski</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
   <!-- The Navbar for desktop -->
     <nav id="desktop-nav">
-        <div class="logo"> Dejan Dojcinoski</div>
+        <div class="title-name"> Dejan Dojcinoski</div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -24,7 +24,7 @@
     </nav>
     <!-- The Navbar for mobile-->
     <nav id="hamburger-nav">
-        <div class="logo"> Dejan Dojcinoski</div>
+        <div class="title-name"> Dejan Dojcinoski</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -40,13 +40,14 @@
             </div>
         </div>
     </nav>
+    <!-- Profile section -->
     <section id="profile">
         <div class="section-pic-container">
-            <img src="./files/me.jpeg" alt="Profile picture of Dejan Dojcinoski">
+            <img src="./files/Images/me.jpeg" alt="Profile picture of Dejan Dojcinoski">
         </div>
         <div class="section-text">
             <p class="section-text-p1">Hello I'm</p>
-            <h1 class="title">Dejan Dojcinoski</h1>
+            <h1 class="title">Dejan <span class="surname-color">Dojcinoski</span></h1>
             <p class="section-text-p2">Software Developer</p>
             <div class="btn-container">
                 <button 
@@ -58,35 +59,36 @@
                 onclick="location.href='./#contact'">Contact Info</button>
             </div>
             <div id="socials-container">
-                <img src="./files/linkedin-logo.png" 
+                <img src="./files/Logos/linkedin-logo.png" 
                 alt="My LinkedIn profile"
                 class="icon" 
                 onclick="location.href='https://www.linkedin.com/in/dejandojcinoski'">
 
-                <img src="./files/github-logo.png" alt="My Github profile"
+                <img src="./files/Logos/github-logo.png" alt="My Github profile"
                 class="icon" onclick="location.href='https://www.github.com/'">
             </div>
         </div>
     </section>
+    <!-- The About Section-->
     <section id="about">
         <p class="section-text-p1">Get to know more</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
             <div class="section-pic-container">
-                <img src="./files/me.jpeg" alt="Picture"
+                <img src="./files/Images/me.jpeg" alt="Picture"
                 class="about-pic">
             </div>
             <div class="about-details-container">
                 <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./files/github-logo.png" 
+                    <div class="content-container-about">
+                        <img src="./files/Logos/github-logo.png" 
                         alt="Experience Icon"
                         class="icon">
                         <h3>Experience</h3>
                         <p>Looking for my fisrt contract <br/>as a Software Developer</p>
                     </div>
-                    <div class="details-container">
-                        <img src="./files/OU-LOGO.JPG" 
+                    <div class="content-container-about">
+                        <img src="./files/Logos/OU-LOGO.JPG" 
                         alt="Experience Icon"
                         class="icon">
                         <h3>Education</h3>
@@ -113,18 +115,19 @@
         <img src="./files/arrow.png" alt="Arrow icon" class="icon arrow"
         onclick="location.href='#experience'">
     </section>
+    <!-- The Experience Section-->
     <section id="experience">
         <p class="section-text-p1">Explore My</p>
         <h1 class="title">Experience</h1>
         <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container">
+          <div class="experience-containers">
+            <div class="content-container-experience">
               <h2 class="experience-sub-title">Technical Skills</h2>
               <div class="article-container">
                 <article>
                   <img
-                    src="./files/html-logo.png"
-                    alt="Experience icon"
+                    src="./files/Logos/html-logo.png"
+                    alt="Html icon"
                     class="icon-logo"
                   />
                   <div>
@@ -134,8 +137,8 @@
                 </article>
                 <article>
                   <img
-                    src="./files/css-logo.png"
-                    alt="Experience icon"
+                    src="./files/Logos/css-logo.png"
+                    alt="Css icon"
                     class="icon-logo"
                   />
                   <div>
@@ -145,8 +148,8 @@
                 </article>
                 <article>
                   <img
-                    src="./files/star.png"
-                    alt="Experience icon"
+                    src="./files/Logos/bootstrap-logo.png"
+                    alt="Bootstrap icon"
                     class="icon-logo"
                   />
                   <div>
@@ -156,8 +159,8 @@
                 </article>
                 <article>
                   <img
-                    src="./files/javascript-logo.png"
-                    alt="Experience icon"
+                    src="./files/Logos/javascript-logo.png"
+                    alt="Javascript icon"
                     class="icon-logo"
                   />
                   <div>
@@ -167,8 +170,8 @@
                 </article>
                 <article>
                   <img
-                    src="./files/star.png"
-                    alt="Experience icon"
+                    src="./files/Logos/java-logo.png"
+                    alt="java icon"
                     class="icon-logo"
                   />
                   <div>
@@ -178,8 +181,8 @@
                 </article>
                 <article>
                   <img
-                    src="./files/star.png"
-                    alt="Experience icon"
+                    src="./files/Logos/python-logo.png"
+                    alt="Python icon"
                     class="icon-logo"
                   />
                   <div>
@@ -189,18 +192,73 @@
                 </article>
                 <article>
                   <img
-                    src="./files/star.png"
-                    alt="Experience icon"
+                    src="./files/Logos/cordova-icon.png"
+                    alt="Cordova icon"
                     class="icon-logo"
                   />
                   <div>
-                    <h3>Python</h3>
+                    <h3>Cordova</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./files/Logos/mysql-logo.png"
+                    alt="Mysql icon"
+                    class="icon-logo"
+                  />
+                  <div>
+                    <h3>MySQL</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./files/Logos/xampp-logo.png"
+                    alt="Xampp icon"
+                    class="icon-logo"
+                  />
+                  <div>
+                    <h3>XAMPP</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./files/Logos/github-logo.png"
+                    alt="Github icon"
+                    class="icon-logo"
+                  />
+                  <div>
+                    <h3>Github</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./files/Logos/linux-logo.png"
+                    alt="Linux icon"
+                    class="icon-logo"
+                  />
+                  <div>
+                    <h3>Linux</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./files/Logos/visual-studio-code-logo.png"
+                    alt="Visual studio code icon"
+                    class="icon-logo"
+                  />
+                  <div>
+                    <h3>VS Code</h3>
                     <p>Basic</p>
                   </div>
                 </article>
               </div>
             </div>
-            <div class="details-container">
+            <div class="content-container-experience">
               <h2 class="experience-sub-title">Soft Skills</h2>
               <div class="article-container">
                 <article>
@@ -271,48 +329,49 @@
         <img src="./files/arrow.png" alt="Arrow icon" class="icon arrow"
         onclick="location.href='#projects'">
     </section>
+    <!-- The Projects Section-->
     <section id="projects">
       <p class="section-text-p1">Browse my recents</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-        <div class="details-container color-container">
+      <div class="project-details-container">
+        <div class="project-containers">
+        <div class="details-container-content-container">
           <div class="article-container-projects">
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <img src="./files/heretohelp-logo.png" 
+            <img src="./files/Logos/heretohelp-logo.png" 
             alt=""
             class="project-img">
           </div>
-          <h2 class="experience-sub-title project-title">Project One</h2>
-          <div class="btn-container">
+          <h2 class="experience-sub-title project-title">Here To Help: Community 
+            Assistance on Your Mobile</h2>
+          <div class="btn-container-projects">
             <button class="btn btn-color-2 project-btn" 
             onclick="location.href='https://github.com'">Github</button>
             <button class="btn btn-color-2 project-btn" 
             onclick="location.href='https://github.com'">Live Demo</button>
           </div>
         </div>
-        <div class="details-container color-container">
+        <div class="details-container-content-container">
           <div class="article-container-projects">
-            <img src="./files/OU-LOGO.JPG" 
+            <img src="./files/Images/lion.jpeg" 
             alt=""
             class="project-img">
           </div>
-          <h2 class="experience-sub-title project-title">Project One</h2>
-          <div class="btn-container">
+          <h2 class="experience-sub-title project-title">Motivation-Meme-Project</h2>
+          <div class="btn-container-projects">
             <button class="btn btn-color-2 project-btn" 
-            onclick="location.href='https://github.com'">Github</button>
+            onclick="location.href='https://github.com/DejanDojcinoski/Motivation-Meme-Project'">Github</button>
             <button class="btn btn-color-2 project-btn" 
-            onclick="location.href='https://github.com'">Live Demo</button>
+            onclick="location.href='https://dejandojcinoski.github.io/Motivation-Meme-Project/'">Live Demo</button>
           </div>
         </div>
-        <div class="details-container color-container">
+        <div class="details-container-content-container">
           <div class="article-container-projects">
-            <img src="./files/OU-LOGO.JPG" 
+            <img src="./files/Logos/OU-LOGO.JPG" 
             alt=""
             class="project-img">
           </div>
           <h2 class="experience-sub-title project-title">Project One</h2>
-          <div class="btn-container">
+          <div class="btn-container-projects">
             <button class="btn btn-color-2 project-btn" 
             onclick="location.href='https://github.com'">Github</button>
             <button class="btn btn-color-2 project-btn" 
@@ -322,20 +381,88 @@
       </div>
       </div>
       <img src="./files/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='#certifications'">
+    </section>
+    <!-- The Certification Section -->
+    <section id="certifications">
+      <p class="section-text-p1">Browse my</p>
+      <h1 class="title">Certifications</h1>
+      <div class="certification-details-container">
+        <div class="certification-containers">
+        <div class="details-container-content-container">
+          <div class="article-container-certification">
+            <h2 class="experience-sub-title project-title">DevNet Associate 
+            </h2>
+            <img src="./files/Certificates/devnet-associate.png" 
+            alt="Devnet associate icon"
+            class="project-img">
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+            onclick="window.open('https://www.credly.com/badges/ecf71874-e804-43a1-87f3-50c3a730ccc2/public_url')" 
+            >Show Credential</button>
+          </div>
+        </div>
+        <div class="details-container-content-container">
+          <div class="article-container-certification">
+            <h2 class="experience-sub-title project-title">CCNA: Introduction to Networks 
+            </h2>
+            <img src="./files/Certificates/ccna-introduction-to-networks.png" 
+            alt="CCNA introduction to networks icon"
+            class="project-img">
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" 
+            onclick="window.open('https://www.credly.com/badges/71ac63c5-1e2c-47f0-b027-81968d0c11e9/public_url')"
+            >Show Credential</button>
+          </div>
+        </div>
+        <div class="details-container-content-container">
+          <div class="article-container-certification">
+            <h2 class="experience-sub-title project-title">CCNA: Switching, Routing, and Wireless Essentials 
+            </h2>
+            <img src="./files/Certificates/ccna-switching-routing-and-wireless-essentials.png" 
+            alt="CCNA switching routing and wireless essentials icon"
+            class="project-img">
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" 
+            onclick="window.open('https://www.credly.com/badges/8d421dd7-54a2-4323-ab79-45e46d91cf3e/public_url')"
+            >Show Credential</button>
+          </div>
+        </div>
+        <div class="details-container-content-container">
+          <div class="article-container-certification">
+            <h2 class="experience-sub-title project-title">CCNA: Enterprise Networking, Security & Automation  
+            </h2>
+            <img src="./files/Certificates/ccna-enterprise-networking-security-and-automation.png" 
+            alt="CCNA enterprise networking security and automation icon"
+            class="project-img">
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" 
+            onclick="window.open('https://www.credly.com/badges/d99dfaea-25ec-4284-b4da-887b07458aea/public_url')"
+            >Show Credential</button>
+          </div>
+        </div>
+      </div>
+      </div>
+      <img src="./files/arrow.png" alt="Arrow icon" class="icon arrow"
         onclick="location.href='#contact'">
     </section>
+    <!-- The Contact Section -->
     <section id="contact">
       <p class="section-text-p1">Get in touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-up">
         <div class="contact-info-container">
-          <img src="./files/github-logo.png" 
+          <img src="./files/Logos/github-logo.png" 
           alt=""
           class="icon contact-icon">
           <p><a href="mailto:dejan.dojcinoski@yahoo.com">Email</a></p>
         </div>
         <div class="contact-info-container">
-          <img src="./files/linkedin-logo.png" 
+          <img src="./files/Logos/linkedin-logo.png" 
           alt=""
           class="icon contact-icon">
           <p><a href="https://www.linkedin.com/in/dejandojcinoski">LinkedIn</a></p>
