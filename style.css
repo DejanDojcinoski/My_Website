@@ -313,6 +313,12 @@ section {
     position: relative;
   }
 
+.main-experience-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
   .experience-containers {
     gap: 2rem;
     margin-bottom: 2rem;
@@ -320,36 +326,32 @@ section {
     display: flex;
 }
 
+.experience-container-content{
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
   .experience-sub-title {
     color: rgb(85, 85, 85);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
   }
-  
-  .experience-details-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
 
-  .content-container-experience{
-    padding: 1.5rem;
-    flex: 1;
-    background: white;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    text-align: center;
-  }
-  
-  .article-container {
+  .article-container-experience {
     display: flex;
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.5rem;
     justify-content: flex-start;
+    padding: 5rem;
+    padding-bottom: 0;
+    padding-top: 0;
   }
   
   article {
@@ -389,6 +391,17 @@ section {
   justify-content: center;
 }
 
+/* .project-container-content {
+  padding: 1.5rem;
+  flex: 1;
+  background: rgb(250, 250, 250);
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  max-width: 320px;
+} */
+
 .project-container-content {
   padding: 1.5rem;
   flex: 1;
@@ -398,10 +411,17 @@ section {
   border-color: rgb(163, 163, 163);
   text-align: center;
   max-width: 320px;
+  display: block;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: center; 
+  position: relative;  
 }
 
 .image-container-projects {
   text-align: initial;
+  
 }
 
 .project-img {
@@ -413,13 +433,20 @@ section {
 .project-title {
   margin: 1rem;
   color: black;
+  padding-bottom: 3rem;
 }
 
 .btn-container-projects{
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  
 }
 
 .project-btn {
@@ -435,7 +462,7 @@ section {
   position: relative;
 }
 
-.certification-details-container {
+.main-certification-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -448,6 +475,16 @@ section {
   display: flex;
 }
 
+.certification-container-content {
+  padding: 1.5rem;
+  flex: 1;
+  background: rgb(250, 250, 250);
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
 .article-container.certification {
   display: flex;
   text-align: initial;
@@ -457,15 +494,7 @@ section {
   justify-content: center;
 }
 
-.details-container-content-container {
-  padding: 1.5rem;
-  flex: 1;
-  background: rgb(250, 250, 250);
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  text-align: center;
-}
+
 /*CONTACT SECTION*/
 
 
